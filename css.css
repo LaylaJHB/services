@@ -1,3 +1,4 @@
+/* Estilo Geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,10 +6,12 @@ body {
   text-align: center;
 }
 
+/* Cabeçalho */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 15px 20px;
   background: #007bff;
   color: white;
 }
@@ -25,10 +28,15 @@ nav a {
   font-weight: bold;
 }
 
+/* Seção Principal */
 .hero {
   background: #007bff;
   color: white;
   padding: 50px;
+}
+
+.hero h2 {
+  font-size: 2em;
 }
 
 .btn {
@@ -39,8 +47,10 @@ nav a {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 5px;
 }
 
+/* Seção Benefícios */
 #beneficios {
   padding: 40px;
 }
@@ -49,12 +59,16 @@ nav a {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
 }
 
 .benefit {
   width: 30%;
+  min-width: 250px; /* Garante que os itens fiquem ajustados */
+  text-align: center;
 }
 
+/* Formulário */
 #contato {
   background: #f4f4f4;
   padding: 40px;
@@ -62,9 +76,12 @@ nav a {
 
 form input, button {
   display: block;
-  width: 80%;
+  width: 90%;
+  max-width: 400px;
   margin: 10px auto;
   padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
 }
 
 button {
@@ -74,9 +91,37 @@ button {
   cursor: pointer;
 }
 
+/* Rodapé */
 footer {
   background: #222;
   color: white;
   padding: 20px;
   margin-top: 20px;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      padding: 0;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .hero h2 {
+      font-size: 1.5em;
+  }
+
+  .benefits {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .benefit {
+      width: 80%;
+  }
 }
