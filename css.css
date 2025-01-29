@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #007bff;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: #007bff;
+  color: white;
+  padding: 50px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #ffcc00;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#beneficios {
+  padding: 40px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.benefit {
+  width: 30%;
+}
+
+#contato {
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+form input, button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
