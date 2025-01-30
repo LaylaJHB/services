@@ -1,4 +1,5 @@
-/*const express = require("express");
+/*
+const express = require("express");
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -44,11 +45,18 @@ app.post("/cadastro", (req, res) => {
     });
 });
 
+
+// Rota para listar os leads cadastrados
+app.get("/leads", (req, res) => {
+    res.json(leads);
+});
+
 // Iniciar servidor
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
 */
+
 
 /* CONFIG PARA MOCK */
 
