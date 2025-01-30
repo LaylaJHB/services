@@ -75,12 +75,14 @@ O sistema armazenará os leads (nome e e-mail) enviados pelo formulário.
 <br><br>
 
 
-🎥 [Assista ao vídeo da demonstração](https://https://youtu.be/gZbRAGvcy3s.mp4)
+🎥 [Assista ao vídeo da demonstração
 
 
-<a href="https://youtu.be/gZbRAGvcy3s" target="_blank">
-  <img src="https://img.youtube.com/vi/gZbRAGvcy3s/maxresdefault.jpg" alt="Assista ao vídeo" width="600">
-</a>
+<video width="600" controls>
+  <source src="https://raw.githubusercontent.com/LaylaJHB/services/main/2025-01-30%2019-13-34.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos.
+</video>
+
 
 
 ## 🛠️ Criando o Banco de Dados MySQL
