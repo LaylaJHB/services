@@ -74,9 +74,13 @@ A landing page foi construída utilizando as seguintes tecnologias:
 O sistema armazenará os leads (nome e e-mail) enviados pelo formulário.
 <br><br>
 
- ![Demonstração](https://youtu.be/gZbRAGvcy3s)
+
+🎥 [Assista ao vídeo da demonstração](https://https://youtu.be/gZbRAGvcy3s.mp4)
 
 
+<a href="https://youtu.be/gZbRAGvcy3s" target="_blank">
+  <img src="https://img.youtube.com/vi/gZbRAGvcy3s/maxresdefault.jpg" alt="Assista ao vídeo" width="600">
+</a>
 
 
 ## 🛠️ Criando o Banco de Dados MySQL
