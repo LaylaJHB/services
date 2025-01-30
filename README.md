@@ -75,7 +75,7 @@ O sistema armazenará os leads (nome e e-mail) enviados pelo formulário.
 <br><br>
 
 
-🎥 [Assista ao vídeo da demonstração
+🎥 Assista ao vídeo da demonstração
 
 
 <video width="600" controls>
