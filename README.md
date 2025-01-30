@@ -5,7 +5,6 @@
 
 ## Descrição
 
-A landing page foi constr
 Esta é uma landing page para a empresa **BlueTech Solutions**, projetada para apresentar os serviços e benefícios da empresa. A página inclui uma navegação intuitiva, seção de benefícios, formulário de contato e design responsivo.
 
 ## Tecnologias Utilizadas
@@ -38,49 +37,76 @@ A landing page foi construída utilizando as seguintes tecnologias:
 
 ### 📌 Passos para Testar com Dados Mockados
 
+- Clone esse repositório. Acesse o terminal do VsCode digite o comando:
+
+  ```
+  git clone https://github.com/LaylaJHB/services.git
+  ```
+  
+- Instale as dependências
+  ```
+  npm install
+  ```
 - Inicie o servidor Node.js
   ```
   npm start
   ```
 
 - Abra a Landing Page (lp.html) 
-  - Clique com o botão direito do mouse sobre o arquivo `lp.html` e clique na opção ```Open with Live Server```
+  - Clique com o botão direito do mouse sobre o arquivo `landingPage.html` e clique na opção ```Open with Live Server```
 
+<br>
+    
+  - >✨ Caso não apareça a opção "Open with Live Server", instale a extensão Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  <br>
 
-  >Caso não apareça a opção "Open with Live Server", instale a extensão Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
   
-  
+  <br>
+
 - Preencha o formulário de contato presente na landingPage
 
 - Visualize os leads cadastrados:
 
-  - Acesse no navegador: http://localhost:3000/leads
+  
+  > - Acesse no navegador: http://localhost:3000/leads
 
+<br>
 O sistema armazenará os leads (nome e e-mail) enviados pelo formulário.
+<br><br>
 
 ## 🛠️ Criando o Banco de Dados MySQL
 
-Primeiro, crie o banco de dados e a tabela para armazenar os leads:
+- Acesse o MySQL
+- Acesse sua conexão, por exemplo: "MySQL Connections"
+- crie o banco de dados e a tabela para armazenar os leads:
+- 
+<br>
 
-📌 Comando SQL (Execute no MySQL)
+ Ⓜ️ Comando SQL (Execute no MySQL)
 
-```
-CREATE DATABASE landingpage_db;
-
-```
-
-
-```
-USE landingpage_db;
-```
+1. Crie o banco de dados
 
 ```
-CREATE TABLE leads (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE
-);
+    CREATE DATABASE landingpage_db;
 ```
+<br>  
+
+2. Acesse o banco de dados criado
+
+```
+    USE landingpage_db;
+```
+<br>
+
+3. Crie a tabela para receber os leads
+```
+    CREATE TABLE leads (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nome VARCHAR(100) NOT NULL,
+        email VARCHAR(100) NOT NULL UNIQUE
+    );
+```
+<br>
 
 ## Licença
 
