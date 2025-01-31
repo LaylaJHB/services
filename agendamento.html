@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Agendamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>BlueTech Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#agendamento">Agendar</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Soluções para seu Negócio</h2>
+        <p>Agende um serviço profissional agora mesmo!</p>
+    </section>
+
+    <!-- Seção de Agendamento -->
+    <section id="agendamento">
+        <h2>Agende um Serviço</h2>
+        <form id="formAgendamento">
+            <label for="servico">Escolha um serviço:</label>
+            <select id="servico" required>
+                <option value="Consulta Técnica">Consulta Técnica</option>
+                <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                <option value="Suporte TI">Suporte TI</option>
+            </select>
+
+            <label for="data">Escolha uma data:</label>
+            <input type="date" id="data" required>
+
+            <label for="hora">Escolha um horário:</label>
+            <input type="time" id="hora" required>
+
+            <label for="preco">Preço (R$):</label>
+            <input type="number" id="preco" required>
+
+            <button type="submit">Agendar e Pagar</button>
+        </form>
+
+        <h3>Agendamentos Confirmados</h3>
+        <ul id="listaAgendamentos"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BlueTech Solutions - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
