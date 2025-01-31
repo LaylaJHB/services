@@ -7,6 +7,8 @@
 
 Esta é uma landing page para a empresa **BlueTech Solutions**, projetada para apresentar os serviços e benefícios da empresa. A página inclui uma navegação intuitiva, seção de benefícios, formulário de contato e design responsivo.
 
+Acesse aqui -> https://services-tawny.vercel.app/
+
 ## Tecnologias Utilizadas
 
 A landing page foi construída utilizando as seguintes tecnologias:
@@ -74,9 +76,6 @@ A landing page foi construída utilizando as seguintes tecnologias:
 O sistema armazenará os leads (nome e e-mail) enviados pelo formulário.
 <br><br>
 
-
-
-[![Clique para assistir](https://raw.githubusercontent.com/LaylaJHB/services/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/LaylaJHB/services/main/2025-01-30%2019-13-34.mp4)
 
 
 ## 🛠️ Criando o Banco de Dados MySQL
