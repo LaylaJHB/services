@@ -75,12 +75,8 @@ O sistema armazenará os leads (nome e e-mail) enviados pelo formulário.
 <br><br>
 
 
-🎥 [Assista ao vídeo aqui](https://github.com/LaylaJHB/services/blob/main/2025-01-30%2019-13-34.mp4)
 
-ffmpeg -i video.mp4 -ss 00:00:02 -vframes 1 thumbnail.jpg
-
-
-[![Clique para assistir](https://raw.githubusercontent.com/LaylaJHB/services/main/thumbnail.jpg)](https://raw.githubusercontent.com/LaylaJHB/services/main/2025-01-30%2019-13-34.mp4)
+[![Clique para assistir](https://raw.githubusercontent.com/LaylaJHB/services/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/LaylaJHB/services/main/2025-01-30%2019-13-34.mp4)
 
 
 ## 🛠️ Criando o Banco de Dados MySQL
