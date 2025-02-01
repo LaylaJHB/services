@@ -13,7 +13,35 @@ Acesse aqui -> https://services-tawny.vercel.app/
 
 A landing page foi construída utilizando as seguintes tecnologias:
 
-[![HTML](https://img.shields.io/badge/HTML-5-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS](https://img.shields.io/badge/CSS-3-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+
+🌐 Frontend (Interface do Usuário)
+-
+✅ HTML5 → Estrutura da página <br>
+✅ CSS3 → Estilização e responsividade <br>
+✅ JavaScript (ES6) → Interatividade e conexão com o backend <br>
+✅ Fetch API → Comunicação com o backend 
+
+🖥️ Backend (Servidor e API)
+-
+✅ Node.js → Plataforma para executar JavaScript no servidor<br>
+✅ Express.js → Framework para criar APIs REST<br>
+✅ Body-Parser → Middleware para processar JSON no backend<br>
+✅ CORS → Permite comunicação entre frontend e backend
+
+💾 Banco de Dados
+-
+✅ MySQL → Armazena leads e agendamentos<br>
+✅ MySQL2 (Driver Node.js) → Conexão do Node.js com MySQL
+
+💳 Pagamentos
+-
+✅ Stripe API → Processamento de pagamentos online
+
+⚙️ Ferramentas e Desenvolvimento
+-
+✅ Postman → Teste de APIs<br>
+✅ Git & GitHub → Controle de versão e hospedagem do código<br>
+✅ Dotenv → Gerenciamento de variáveis de ambiente (.env)
 
 ![Preview da Landing Page](assets/landing-page-preview.png)
 
