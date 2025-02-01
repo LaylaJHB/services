@@ -99,6 +99,16 @@ app.post("/pagar", async (req, res) => {
     }
 });
 
+// 📋 Rota para confirmar pagamento
+app.post("/confirmar-pagamento", (req, res) => {
+    const { id } = req.body;
+    
+    db.query("UPDATE agendamentos SET pago = true WHERE id = ?", [id], (err, result) => {
+        if (err) return res.status(500).json({ error: "Erro ao confirmar pagamento" });
+        res.json({ message: "Pagamento confirmado!" });
+    });
+});
+
 // 📋 Rota para listar os agendamentos
 app.get("/agendamentos", (req, res) => {
     db.query("SELECT * FROM agendamentos", (err, results) => {
