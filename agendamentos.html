@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Agendamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meus Agendamentos</h1>
+        <nav>
+            <a href="index.html">Voltar</a>
+        </nav>
+    </header>
+
+    <section id="agendamentos">
+        <h2>Lista de Agendamentos</h2>
+        <button onclick="carregarAgendamentos()">Atualizar Lista</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Preço</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="listaAgendamentos">
+                <tr><td colspan="5">Carregando...</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="agendamentos.js"></script>
+</body>
+</html>

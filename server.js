@@ -111,8 +111,18 @@ app.post("/confirmar-pagamento", (req, res) => {
 
 // 📋 Rota para listar os agendamentos
 app.get("/agendamentos", (req, res) => {
-    db.query("SELECT * FROM agendamentos", (err, results) => {
-        if (err) return res.status(500).json({ error: "Erro ao buscar agendamentos" });
+    db.query("SELECT id, servico, data, hora, CAST(preco AS DECIMAL(10,2)) AS preco, pago FROM agendamentos", (err, results) => {
+        if (err) {
+            console.error("Erro ao buscar agendamentos:", err);
+            return res.status(500).json({ error: "Erro ao buscar agendamentos" });
+        }
+
+        // Converter preco para número antes de enviar ao frontend
+        results = results.map(agendamento => ({
+            ...agendamento,
+            preco: parseFloat(agendamento.preco) || 0
+        }));
+
         res.json(results);
     });
 });
