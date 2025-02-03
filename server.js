@@ -1,4 +1,5 @@
 require('dotenv').config(); // Carrega as variáveis de ambiente primeiro
+const nodemailer = require("nodemailer");
 
 const express = require("express"); // Certifique-se de importar primeiro
 const mysql = require("mysql2");
@@ -88,10 +89,13 @@ app.post("/pagar", async (req, res) => {
         // Salvar agendamento no banco (ainda não pago)
         db.query(
             "INSERT INTO agendamentos (servico, data, hora, preco, pago) VALUES (?, ?, ?, ?, ?)",
-            [servico, data, hora, preco, false],
+            [servico, data, hora, preco, false], 
             (err) => {
                 if (err) return res.status(500).json({ error: "Erro ao agendar" });
-                res.json({ url: session.url });
+    
+                // Enviar e-mail de confirmação
+                enviarEmailConfirmacao(email, servico, data, hora);
+                res.json({ message: "Agendamento realizado com sucesso!" });
             }
         );
     } catch (error) {
@@ -126,6 +130,30 @@ app.get("/agendamentos", (req, res) => {
         res.json(results);
     });
 });
+
+// Envio de E-mail automático ao realizar um agendamento
+function enviarEmailConfirmacao(destinatario, servico, data, hora) {
+    let transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+            user: "seuemail@gmail.com",
+            pass: "suasenha"
+        }
+    });
+
+    let mailOptions = {
+        from: "seuemail@gmail.com",
+        to: destinatario,
+        subject: "Confirmação de Agendamento",
+        text: `Seu agendamento para ${servico} foi confirmado para ${data} às ${hora}. Obrigado!`
+    };
+
+    transporter.sendMail(mailOptions, (err, info) => {
+        if (err) console.error("Erro ao enviar e-mail:", err);
+        else console.log("E-mail enviado:", info.response);
+    });
+}
+
 
 /*
 
